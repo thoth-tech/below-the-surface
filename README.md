@@ -1,74 +1,58 @@
 # Below The Surface
 
+## Technical overview
 
-## How to Install
+- **Language:** C++
+- **Current scope:** Large
+- **Code quality:** Poor
+- **Gameplay implementation:** Complete
 
-- Install [Splashkit](https://www.splashkit.io) to your computer 
-- Enter command `git clone https://github.com/thoth-tech/arcade-games` to your terminal
-- Enter command `cd arcade-games/games/BelowTheSurface`
-- Enter command `skm g++ program.cpp -o game`
-- Enter command `./game` to play
+## Gameplay overview
 
-<!--
-Orginal Controles for game updated to suit Arcade Machine
- ### **Player 1**   
+A puzzle-platformer supporting 1-2 players. Players have to redirect the flow of water through pipes while avoiding or eliminating enemies in order to reach the portal at the end of each level.
 
-| Input | Description |     
-| --- | ----------- |   
-| W Key | Jump |          
-| A Key | Move Left |
-| D Key | Move Right |          
-| S Key | Crouch |
-| F Key | Attack/Interact |
+### Player 1 Controls
 
-### **Player 2**  
+| Action        | Key                  |
+|---------------|----------------------|
+| Move Left     | Left arrow           |
+| Move Right    | Right arrow          |
+| Jump / Climb  | Up arrow / Right ALT |
+| Crouch        | Down arrow           |
+| Use/Attack    | Right CTRL           |
+| Dance         | Z                    |
 
-| Input | Description |     
-| --- | ----------- |   
-| Up Arrow | Jump |          
-| Left Arrow | Move Left |
-| Right Arrow | Move Right |          
-| Down Arrow | Crouch |
-| L Key | Attack/Interact |
+### Player 2 Controls
 
-### **Other Buttons**
+| Action        | Key                  |
+|---------------|----------------------|
+| Move Left     | D                    |
+| Move Right    | G                    |
+| Jump / Climb  | R / Left ALT         |
+| Crouch        | F                    |
+| Use/Attack    | Left CTRL            |
 
-| Input | Description |     
-| --- | ----------- |   
-| Enter / H Key | Pause |          
-| Enter / F Key | Selection | -->
+## Other
 
-> controls for arcade machine
-### **Player 1**   
+- This game has an associated GUI level editor: [Splashkit-LevelEditor](https://github.com/thoth-tech/Splashkit-LevelEditor).
+- Some miscellaneous documentation from the original authors is in `/docs/`, alongside additional documentation related to level editing.
+- Relevant resources to use the 3rd-party Tiled level editor are in `/levels/tiled`.
+- The game was originally designed to run at a resolution of 1600x896, but this was lowered to 800x446 for performance reasons on the arcade machines. The change has several implications for gameplay, level design, and screen layout.
 
-| Input | Description |     
-| --- | ----------- |   
-| Up Key or Left Alt| Jump |          
-| Left Key | Move Left |
-| Right Key | Move Right |          
-| Down Key | Crouch |
-| Left Crtl Key | Attack/Interact |
+## Screenshots
 
-### **Player 2**  
+![](/documentation/screenshot-01.png)
 
-| Input | Description |     
-| --- | ----------- |   
-| R Key or S Key| Jump |          
-| D Key | Move Left |
-| G Key | Move Right |          
-| F Key | Crouch |
-| A Key | Attack/Interact |
+![](/documentation/screenshot-02.png)
 
-### **Other Buttons**
+## Credits
 
-| Input | Description |     
-| --- | ----------- |   
-| Enter / P Key | Pause |          
-| Enter / Left Ctrl Key | Selection |
+Originally created by 2022-T2 team:
 
-
-#### Edited:
-
-- Enter command `skm g++ -O3 program.cpp -o game` for optimisations
-- Reduced resolution on game and assets.
-- Changed button placement and asset placement to better fit new resolution
+- Morgaine Barter
+- Daniel Agbay
+- Lily Lan
+- Robert Osborne
+- Jiahao Zheng
+- Roy Chen
+- Lachlan Morgan
