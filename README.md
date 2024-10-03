@@ -37,7 +37,7 @@ A puzzle-platformer supporting 1-2 players. Players have to redirect the flow of
 
 - This game has an associated GUI level editor: [Splashkit-LevelEditor](https://github.com/thoth-tech/Splashkit-LevelEditor).
 - Some miscellaneous documentation from the original authors is in `/docs/`, alongside additional documentation related to level editing.
-- Relevant resources to use the 3rd-party Tiled level editor are in `/levels/tiled`.
+- Relevant resources to use the 3rd-party Tiled level editor are in `/levels/tiled/`.
 - The game was originally designed to run at a resolution of 1600x896, but this was lowered to 800x446 for performance reasons on the arcade machines. The change has several implications for gameplay, level design, and screen layout.
 
 ## Screenshots
