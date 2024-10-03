@@ -39,6 +39,7 @@ A puzzle-platformer supporting 1-2 players. Players have to redirect the flow of
 - Some miscellaneous documentation from the original authors is in `/docs/`, alongside additional documentation related to level editing.
 - Relevant resources to use the 3rd-party Tiled level editor are in `/levels/tiled/`.
 - The game was originally designed to run at a resolution of 1600x896, but this was lowered to 800x446 for performance reasons on the arcade machines. The change has several implications for gameplay, level design, and screen layout.
+- [Morgaine Barter](https://github.com/MorgaineBarter) has offered to be a point of contact for future students who have need to get in touch from someone on the original team. She can be contacted via e.g., MS Teams via her staff account (not her student account).
 
 ## Screenshots
 
