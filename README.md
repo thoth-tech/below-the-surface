@@ -20,7 +20,7 @@ A puzzle-platformer supporting 1-2 players. Players have to redirect the flow of
 | Jump / Climb  | Up arrow / Right ALT |
 | Crouch        | Down arrow           |
 | Use/Attack    | Right CTRL           |
-| Dance         | Z                    |
+| Dance (both)  | Z                    |
 
 ### Player 2 Controls
 
@@ -31,6 +31,7 @@ A puzzle-platformer supporting 1-2 players. Players have to redirect the flow of
 | Jump / Climb  | R / Left ALT         |
 | Crouch        | F                    |
 | Use/Attack    | Left CTRL            |
+| Dance (both)  | Z                    |
 
 ## Other
 
