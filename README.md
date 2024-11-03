@@ -2,6 +2,12 @@
     <img width="150px" src="https://github.com/thoth-tech/.github/blob/main/images/splashkit.png"/>
 </p>
 
+![GitHub contributors](https://img.shields.io/github/contributors/thoth-tech/below-the-surface?label=Contributors&color=F5A623)
+![GitHub issues](https://img.shields.io/github/issues/thoth-tech/below-the-surface?label=Issues&color=F5A623)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/thoth-tech/below-the-surface?label=Pull%20Requests&color=F5A623)
+![Forks](https://img.shields.io/github/forks/thoth-tech/below-the-surface?label=Forks&color=F5A623)
+![Stars](https://img.shields.io/github/stars/thoth-tech/below-the-surface?label=Stars&color=F5A623)
+
 # Below The Surface
 
 **Below The Surface** is an action-adventure game developed using the SplashKit SDK. Dive deep into a thrilling, underwater world filled with challenges, enemies, and interactive elements. Designed for compatibility with the **Arcade Machine**, this game provides an engaging experience for one or two players.
