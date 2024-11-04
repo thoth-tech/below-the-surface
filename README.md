@@ -2,11 +2,12 @@
     <img width="150px" src="https://github.com/thoth-tech/.github/blob/main/images/splashkit.png"/>
 </p>
 
-![GitHub contributors](https://img.shields.io/github/contributors/thoth-tech/below-the-surface?label=Contributors&color=F5A623)
-![GitHub issues](https://img.shields.io/github/issues/thoth-tech/below-the-surface?label=Issues&color=F5A623)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/thoth-tech/below-the-surface?label=Pull%20Requests&color=F5A623)
-![Forks](https://img.shields.io/github/forks/thoth-tech/below-the-surface?label=Forks&color=F5A623)
-![Stars](https://img.shields.io/github/stars/thoth-tech/below-the-surface?label=Stars&color=F5A623)
+[![GitHub contributors](https://img.shields.io/github/contributors/thoth-tech/below-the-surface?label=Contributors&color=F5A623)](https://github.com/thoth-tech/below-the-surface/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/thoth-tech/below-the-surface?label=Issues&color=F5A623)](https://github.com/thoth-tech/below-the-surface/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/thoth-tech/below-the-surface?label=Pull%20Requests&color=F5A623)](https://github.com/thoth-tech/below-the-surface/pulls)
+[![Forks](https://img.shields.io/github/forks/thoth-tech/below-the-surface?label=Forks&color=F5A623)](https://github.com/thoth-tech/below-the-surface/network/members)
+[![Stars](https://img.shields.io/github/stars/thoth-tech/below-the-surface?label=Stars&color=F5A623)](https://github.com/thoth-tech/below-the-surface/stargazers)
+
 
 # Below The Surface
 
@@ -34,7 +35,7 @@ git clone https://github.com/thoth-tech/arcade-games
 
 ### Step 3: Navigate to the Game Directory
 
-Move into the game’s directory within the repository:
+Move into the game's directory within the repository:
 
 ```bash
 cd arcade-games/games/BelowTheSurface
@@ -105,7 +106,7 @@ To ensure the game runs smoothly on the Arcade Machine, several adjustments and 
 
 - **Optimized Build**: Use `skm g++ -O3 program.cpp -o game` for an optimized version, which improves performance by reducing execution time and memory usage.
 - **Resolution Adjustments**: The game resolution and asset quality have been adjusted for compatibility with the Arcade Machine, ensuring smoother gameplay and faster load times.
-- **Control Customization**: Controls have been reconfigured to align with the Arcade Machine’s setup, making gameplay intuitive for both single and dual-player modes.
+- **Control Customization**: Controls have been reconfigured to align with the Arcade Machine's setup, making gameplay intuitive for both single and dual-player modes.
 
 ## Contributing
 
