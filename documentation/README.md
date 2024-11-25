@@ -1,92 +1,110 @@
-
-
 # Below the Surface Documentation
 
-This is a collaborative effort to create an **exceptional game** to be implemented within the **Arcade Machine**.
+Welcome to the development documentation for **Below the Surface**! This project is a collaborative effort to create an exceptional game for the **Arcade Machine**. This guide provides an overview of the core files, level management, and setup instructions to help you contribute effectively to the game.
 
+---
 
-## Header Files
+## Project Structure
 
-Here are the following header files that you should be aware of while developing this game. 
+### Header Files
 
-**player.h** 
-Header file containing the player class, its attributes, functions, and states.
+Below are the key header files you’ll encounter while developing **Below the Surface**:
 
-**map.h**
-Header file containing the necessary contents for the game to display when playing.
+- **`player.h`**: Defines the `Player` class, along with its attributes, functions, and states.
+- **`map.h`**: Manages game content display, including backgrounds and map elements.
+- **`level.h`**: Responsible for scene management, such as level transitions and collision checks.
+- **`enemy.h`**: Contains the enemy classes with their attributes and behaviors.
+- **`behaviour.h`**: Manages AI behavior for different enemy types.
+- **`block.h`**: Defines the behavior of individual blocks in the game.
+- **`camera.h`**: Tracks the player’s movements across the level.
+- **`cellsheet.h`**: Defines the cell structure used for game elements.
+- **`collision.h`**: Handles collision detection and responses throughout the game.
+- **`get_level.h`**: Loads and renders a level on the screen.
+- **`hud.h`**: Manages the player’s HUD (Heads-Up Display) for displaying health, score, etc.
+- **`screen.h`**: Handles rendering of the game on the screen.
+- **`testing.h`**: Provides functions for testing various components during development.
 
-**level.h**
-Header file responsible for scene management. Such as switching levels or checking collisions.
+---
 
-**enemy.h**
-Header file containing enemy classes, its attributes and functions.
+## Level Management
 
-**behaviour.h**
-Header file responsible for determining the AI behaviour of different enemy class.
+### Level Text Files
 
-**block.h**
-Header file responsible for each of the block's behaviour.
+The **`levels`** folder contains text files that represent different game levels. Each file uses block IDs to define the layout of the levels, which can be created or edited in the **Level Editor**.
 
-**camera.h**
-Header file responible for tracking the player around the level.
+**Important**: **Do not manually change the values inside these text files** to avoid unintended modifications. Use the Level Editor to create or edit levels instead.
 
-**cellsheet.h**
-Header file responsible for the definition of cells.
+### Testing a Level
 
-**collision.h**
-Header file responsible for handling collisions throughout the level.
+To test a custom level, run the following command in the terminal:
 
-**get_level.h**
-Header file responsible for grabbing a level from header files level to screen.
+#### Format
 
-**hud.h**
-Header file responsible for the display of the player HUD.
-
-**screen.h**
-Header file responsible for displaying the game onto the screen.
-
-**testing.h**
-Header file responsible for testing functions.
- 
-## Level Text Files
-Within folder **levels** there are text files filled with block id. These ids are the what represents the levels that you see within the game. And you can create one by using the level editor. Just make sure to add them in the folder once you've created it. **DO NOT CHANGE THE VALUES INSIDE THE TEXT FILES**. Otherwise, the levels will be modified. If you want to test out the level you have created, write the following code.
-
-### Format
-```
-./test -l {amount of layers} levels/{layer0.txt} levels/{layer1.txt} {name of the level}
+```bash
+./test -l {number of layers} levels/{layer0.txt} levels/{layer1.txt} {level name}
 ```
 
-### Example
-```
-./test -l 2 file0.txt file1.txt test
+#### Example
+
+```bash
+./test -l 2 levels/layer0.txt levels/layer1.txt test
 ```
 
-## Loading Levels in Level Editor
-If you want to edit an existing level. Drag the files of that level onto the level editor, compile, and write the following.
+### Loading a Level in the Level Editor
 
-### Format
-```
-./test -load {amount of layers} {layer0.txt} {layer1.txt} 
-```
+To edit an existing level, load it in the Level Editor with this command:
 
-### Example
-```
-./test -load 1 file0.txt
+#### Format
+
+```bash
+./test -load {number of layers} levels/{layer0.txt} levels/{layer1.txt}
 ```
 
-Keep in mind, to have both the latest versions of the game and the level editor.
+#### Example
 
-## Create files and folders
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
-## Compiling the game and opening the .exe file
-To compile the game, write the following prompt onto the terminal. Keep in mind to also have and set the directory of where you have the repo located in your system onto the terminal 
+```bash
+./test -load 1 levels/layer0.txt
 ```
+
+Ensure you have the latest versions of both the game and the Level Editor for compatibility.
+
+---
+
+## Using the File Explorer
+
+To manage files and folders, use the file explorer accessible from the left corner of the navigation bar in the development environment:
+
+- **Create New File**: Click **New File** to add a new file within the current directory.
+- **Create New Folder**: Click **New Folder** to organize files within folders.
+
+---
+
+## Compiling and Running the Game
+
+### Compiling the Game
+
+To compile the game, use the following command in your terminal. Ensure your terminal is in the correct directory where the repository is located.
+
+```bash
 skm clang++ -o test program.cpp
 ```
-Once compiled, run the .exe file by writing the following prompt onto the same terminal
-```
+
+### Running the Game
+
+Once compiled, you can run the game with the command:
+
+```bash
 ./test
 ```
 
+### Optimized Compilation
 
+For an optimized build, use the `-O3` flag to improve performance:
+
+```bash
+skm clang++ -O3 -o test program.cpp
+```
+
+---
+
+This documentation should provide all the information you need to work on **Below the Surface**, from managing files and levels to compiling and running the game. If you have further questions or encounter issues, please refer to the README in the main repository or reach out to the project maintainers.
